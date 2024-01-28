@@ -9,6 +9,8 @@ var usersRouter = require('./routes/users');
 var apiRouter = require('./routes/api')
 const profileRouter = require('./routes/profileRouter');
 
+require('dotenv').config();
+
 
 var app = express();
 
@@ -41,6 +43,10 @@ app.use(function(err, req, res, next) {
   // render the error page
   res.status(err.status || 500);
   res.render('error');
+});
+
+app.listen(PORT, () => {
+  console.log(`Server listening on ${PORT}`);
 });
 
 module.exports = app;

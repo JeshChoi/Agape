@@ -1,18 +1,28 @@
+:root {
+  --GREEN:#d0dca4;
+  --ORANGE:#ffac74;
+  
+  --GREY:#d0cccc;
+  --BROWN:#682c1c;
+  }
+  
+
 body {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
-  background-color: #f4f4f4; /* Slightly lighter background */
+  background-color: var(--GREEN); /* Slightly lighter background */
+  color: var(--BROWN);
 }
 
 .home {
   max-width: 1000px;
   margin: 20px auto; /* Added some margin for breathing space */
   padding: 30px; /* Increased padding for a fuller feel */
-  background-color: #ffffff;
-  border: 1px solid #ddd; /* Lightened border color */
+  background-color: var(--GREEN);
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  
 }
 
 .centerText {
@@ -20,20 +30,18 @@ body {
 }
 
 .subtleText {
-  color: #333; /* Darkened the text color for a more professional look */
+  color:  var(--BROWN); /* Darkened the text color for a more professional look */
   font-size: 40px; /* Increased font size for emphasis */
   font-weight: bold;
-  border-bottom: 2px solid #3498db;
   padding-bottom: 10px; /* Increased padding for a fuller look */
   margin-bottom: 30px; /* Increased margin for more separation */
   text-align: left;
 }
 
 .right-title {
-  color: #333; /* Darkened the text color for a more professional look */
+  color: var(--BROWN); /* Darkened the text color for a more professional look */
   font-size: 27px; /* Increased font size for emphasis */
   font-weight: bold;
-  border-bottom: 2px solid #3498db;
   padding-bottom: 10px; /* Increased padding for a fuller look */
   margin-bottom: 30px; /* Increased margin for more separation */
   text-align: left;
@@ -57,7 +65,7 @@ body {
 }
 
 .ant-table {
-  background-color: #ffffff;
+  background-color: var(--GREEN);
 }
 
 .ant-table-thead > tr > th {
@@ -94,6 +102,7 @@ body {
 .the-box{
   display: grid; 
   grid-template-columns: 3fr 1fr;
+
 }
 .main-box{
 
@@ -102,23 +111,34 @@ body {
 button {
   padding: 8px 16px;
   margin-left: 8px;
-  border: none;
-  border-radius: 4px;
+  border-radius: 4px ;
   cursor: pointer;
-  background-color: #6a74a9;
-  color: white;
+  background-color:  var(--ORANGE);
+  color: var(--BROWN);
+  
+}
+
+a {
+  text-decoration: none; /* Removes the underline */
+  color: var(--BROWN); /* Set the color you want */
+}
+
+a:hover {
+  /* Optional: Add styles for when the link is hovered */
+  text-decoration: underline; /* Add underline on hover if desired */
+  color:  var(--BROWN); /* Set the hover color */
 }
 
 .right-bar{
   max-width: 80%;
   margin: 50px auto 0;
   padding: 20px;
-  background-color: #ffffff;
-  border: 1px solid #ccc5c5;
+  background-color: var(--ORANGE);
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  max-height: 260px;
+  max-height: auto;
+  border: 1px solid var(--BROWN);
   position: relative; /* Set relative positioning for child elements */
+  
 }
 
 li {

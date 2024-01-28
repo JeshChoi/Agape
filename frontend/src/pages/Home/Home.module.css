@@ -1,8 +1,15 @@
+:root {
+--GREEN:#d0dca4;
+--ORANGE:#ffac74;
+
+--GREY:#d0cccc;
+--BROWN:#682c1c;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
-  background-color: #ffffff;
   align-items: center;
   min-height: 100vh; /* Set minimum height to 100% of the viewport height */
 }
@@ -11,10 +18,8 @@ body {
   max-width: 85%;
   margin: 50px auto 0;
   padding: 20px;
-  background-color: #ffffff;
-  border: 1px solid #ccc5c5;
+  color: var(--GREEN);
   border-radius: 8px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   min-height: 100%; /* Ensure that the content fills at least 100% of the viewport height */
   position: relative; /* Set relative positioning for child elements */
 }
@@ -26,8 +31,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: #ff5e00;
+  
 }
 .the-box{
+  
   display: flex; 
   flex-direction: column;
   background-color: red;
@@ -51,19 +59,18 @@ body {
 .subtleText {
   color: #555;
   font-size: 24px;
-  border-bottom: 2px solid #CDCDCD;
   padding-bottom: 10px;
   margin-bottom: 20px;
+  
 }
 
 
 .exit {
   margin-top: 20px;
-  background-color: #e74c3c;
-  color: #fff;
-  border: none;
+  background-color: var(--ORANGE);
+  border: 1px solid var(--BROWN);
+  color: var(--BROWN);
   padding: 10px 20px;
-  border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
   display: flex;
@@ -94,7 +101,7 @@ body {
 
 /* Add a title border at the top with a different color */
 .titleBorder {
-  border-top: 4px solid #27ae60; /* Green color for the title border */
+  border-top: 4px solid ; /* Green color for the title border */
   margin-top: -20px; /* Adjust margin to overlap with the subtleText margin */
 }
 .footer {
@@ -104,11 +111,12 @@ body {
   text-align: center;
   margin-top: 30px;
   padding: 10px;
-  background-color: #f4f4f4;
-  border-top: 1px solid #e0e0e0;
+  background-color: var(--ORANGE);
+  color: var(--BROWN);
+  border-top: 1px solid var(--BROWN);
   border-radius: 8px;
   box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
   font-size: 14px;
-  color: #555;
+  
   font-weight: bold;
 }
