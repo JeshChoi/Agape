@@ -1,16 +1,20 @@
 {
   "manifest_version": 3,
-  "name": "Agapi2",
+  "name": "Agape",
   "description": "Mental Health Assistant",
   "version": "1.0",
   "action": {
-    "default_popup": "popup.html",
+    "default_popup": "./popup.html",
     "default_icon": "./cheems.png"
   },"background": {
     "service_worker": "./scripts/background.js" 
   },
   "permissions": [
     "scripting", "activeTab"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
   ],
   "content_scripts": [
     {

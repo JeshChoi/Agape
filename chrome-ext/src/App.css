@@ -59,6 +59,7 @@
 }
 /* Middle content */
 .box-content {
+  display: flex;
   flex-grow: 1; /* Allows the content to fill available space */
   overflow: auto; /* Adds scroll if content overflows */
   background-color: #C9D7A5;
@@ -112,4 +113,10 @@ small-text-button {
 .divider{
   padding-top: 5px;
   padding-bottom: 5px;
+}
+.fidget-spinner{
+flex-grow: 1;
+display: flex;
+align-items: center;
+justify-content: center;
 }
