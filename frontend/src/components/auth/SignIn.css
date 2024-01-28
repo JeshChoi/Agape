@@ -1,0 +1,85 @@
+.sign-in-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30vh;
+    flex-direction: row; 
+  }
+  
+.sign-in-form {
+    width: 300px;
+    text-align: left; 
+}
+
+.sign-up-form {
+    width: 300px;
+    text-align: left;
+    margin-left: 10vh;
+}
+
+.vertical-line {
+    position: absolute;
+    top: 32vh;
+    bottom: 0;
+    left: 50%;
+    border-left: 2px solid #ccc; 
+    height: 25%;
+  }
+
+
+.name {
+    text-align: center; 
+    height: 5%;
+  }
+
+.name h1 {
+    letter-spacing: 8px;
+}
+
+
+.sign-in-form input,
+.sign-up-form input {
+    width: 27vh;
+    padding: 10px;
+    margin: 1vh 0 10px 1vh;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+}
+
+.sign-in-form h1,
+.sign-up-form h1 {
+    margin: 0 0 10px 1vh;
+}
+
+
+.title-container {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.auth-button {
+    width: 30vh;
+    margin-top: 1vh;
+  }
+
+  .error-alert {
+    margin-top: 5vh;
+    margin: 5vh 25vh 0 25vh;
+  }
+
+.page {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    justify-content: center;
+}
