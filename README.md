@@ -51,6 +51,6 @@ Agape also supports post-surgery patients dealing with mental health challenges.
 ## What's Next for Agape
 
 1. **Strategic Alliances**: Partnering with health organizations to share data and insights.
-2. **Facial Recognition in FaceTime**: Integrating emotion analysis during calls, with a focus on ethical practices and user privacy.
+2. **Facial Recognition in FaceTime**: Integrating emotion analysis during calls with a focus on ethical practices and user privacy.
 
 Agape stands as a testament to technological innovation in mental health support, emphasizing the need for empathy and understanding in digital solutions.
